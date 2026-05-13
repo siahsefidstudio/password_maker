@@ -26,5 +26,5 @@ function generatePassword() {
         password += chars.charAt(Math.floor(Math.random() * chars.length));
     }
 
-    document.getElementById('password').innerText = `رمز عبور: ${password}`;
+    document.getElementById('password').innerText = `${password}`;
 }
