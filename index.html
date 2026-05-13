@@ -1,9 +1,43 @@
-<!doctype html>
-<html>
-  <head>
-    <title>password generator</title>
-  </head>
-  <body>
-    <button>تولید گذرواژه‌</button>
-  </body>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تولید کننده رمز عبور</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>تولید کننده رمز عبور</h2>
+        <form id="passwordForm">
+            <label for="length">طول رمز عبور:</label>
+            <input type="number" id="length" value="12">
+
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                شامل حروف کوچک
+            </label>
+
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                شامل حروف بزرگ
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                شامل اعداد
+            </label>
+
+            <label>
+                <input type="checkbox" id="specialChars" checked>
+                شامل کاراکترهای ویژه
+            </label>
+
+            <button type="button" onclick="generatePassword()">تولید رمز عبور</button>
+        </form>
+        <p id="password"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
